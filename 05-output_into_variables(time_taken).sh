@@ -9,4 +9,4 @@ END_TIME=$(date +%s)
 echo "script completed execution at : $END_TIME"
 
 TOTAL_TIME_TAKEN=$(($STRAT_TIME - $END_TIME))
-echo "total time taken for script execution : $TOTAL_TIME"
+echo "total time taken for script execution : $TOTAL_TIME_TAKEN"
