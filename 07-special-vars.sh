@@ -5,5 +5,5 @@ echo " first variable passed : $1"
 echo " script name : $0 "
 echo "realpath: $(realpath $0)"
 
-echo "who is running current script :$user"
+echo "who is running current script :$USER"
 
