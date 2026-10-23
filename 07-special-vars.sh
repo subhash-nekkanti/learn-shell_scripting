@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "All args passed to the script : $@ "  #  $@ prints all args given in script
+echo "All args passed in the script as a word: $* " # it also prints all the args given to the script but as a word (it will be more clear when we discuss loops)
 echo "Total no of args passed to the script are : $# "  #  $# prints no of args given in script
 echo "First variable passed : $1"
 echo "Script name : $0 "
