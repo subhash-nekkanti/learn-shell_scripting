@@ -15,7 +15,7 @@ if [ $? ne 0 ]; then # $? gives the exit status of previous command if it is 0 t
     exit 1
 else 
     echo "dnf installation success"
-
+fi
 echo "still proceeding"
 
 
@@ -25,5 +25,5 @@ if [ $? ne 0 ]; then
     exit 1
 else 
     echo "mysql client installation success"
-
+fi
 
