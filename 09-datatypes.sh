@@ -13,3 +13,6 @@ Fruits=("apple" "banana" "mango") #array
 echo "all fruits in array are: ${Fruits[@]}" # @is for printing all elements in ann array 
 echo "First fruit in array is : ${Fruits[0]}" #0 is the index of first element in ann array so it prints first element in an array
 echo "Second fruit in array is : ${Fruits[1]}"
+
+NAME=Rama Subhash
+echo "{$NAME}Nekkanti"
