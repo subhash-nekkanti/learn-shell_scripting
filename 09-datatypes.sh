@@ -15,4 +15,4 @@ echo "First fruit in array is : ${Fruits[0]}" #0 is the index of first element i
 echo "Second fruit in array is : ${Fruits[1]}"
 
 NAME="Rama Subhash"
-echo "$NAME Nekkanti"
+echo "${NAME} Nekkanti"
