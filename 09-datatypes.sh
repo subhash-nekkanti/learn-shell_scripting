@@ -16,3 +16,8 @@ echo "Second fruit in array is : ${Fruits[1]}"
 
 NAME="Rama Subhash"
 echo "${NAME} Nekkanti"
+
+declare -i COUNT=10
+COUNT=COUNT+2
+echo "new count is : $COUNT"
+
