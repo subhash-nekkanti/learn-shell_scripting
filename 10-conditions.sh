@@ -2,7 +2,7 @@
 
 echo "please enter your marks"
 read marks
-
+#lt -> lessthan 
 if [ $marks -lt 35 ]; then
     echo "fail"
 elif [ $marks -lt 45 ]; then
@@ -15,4 +15,5 @@ elif [ $marks -lt 85 ]; then
     echo "a grade"
 else
     echo "a grade outstanding"
-fi
+fi #fi denotes that if condition has ended 
+
