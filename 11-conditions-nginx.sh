@@ -20,7 +20,7 @@ fi
 echo "still proceeding"
 
 
-dnf install mysql 
+dnf install mysql -y
 if [ $? -ne 0 ]; then
     echo "mysql client installation failed"
     exit 1
