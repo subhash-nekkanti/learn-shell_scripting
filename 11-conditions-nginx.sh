@@ -11,10 +11,10 @@ dnf install nginxxxx -y #even though if user runs without sudo access shell will
 #we need to manually command shell to terminate if it doesnot satisfy the condition so we add another condition with exit 1
 #exit 1 in line 6 tells shell to terminate as user is not using sudo access and it doesnot proceed to next commands
 if [ $? ne 0 ]; then # $? gives the exit status of previous command if it is 0 then only it proceeds to next steps
-    echo "dnf installation failed"
+    echo "nginx installation failed"
     exit 1
 else 
-    echo "dnf installation success"
+    echo "nginx installation success"
 fi
 echo "still proceeding"
 
