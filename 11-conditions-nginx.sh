@@ -5,3 +5,6 @@ if [ $user_id -ne 0 ]; then
     echo "please run this script eith sudo access"
 fi
 
+dnf install nginx -y
+
+
