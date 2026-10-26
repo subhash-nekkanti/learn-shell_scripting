@@ -3,7 +3,7 @@ logs_folder="/var/logs/shell_practice"
 logs_file=${logs_folder}/${0}.log
 mkdir -p $logs_folder
 
-echo "script strated execution at : ${date +"%F %T"}"
+echo "script strated execution at : $(date +"%F %T")"
 
 validation(){
     if [ $1 -ne 0 ]; then # $? gives the exit status of previous command if it is 0 then only it proceeds to next steps
@@ -25,5 +25,5 @@ validation $? "nginx installation..."
 dnf install mysql -y &>> $logs_file
 validation $? "mysql installation..."
 
-echo "script completed execution at : ${date + "%F %T"}"
+echo "script completed execution at : $(date + "%F %T")"
 
