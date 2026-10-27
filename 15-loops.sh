@@ -10,7 +10,7 @@ validation(){
         echo "${2} FAILED" | tee -a $logs_file
     exit 1  #(nginxxxxx) installation failed (exit status is not 0) so it just prints and terminates it wont install my sql
     else 
-        echo "${2} SUCCESS" | tee -a logs_file
+        echo "${2} SUCCESS" | tee -a $logs_file
     fi
 }
 
