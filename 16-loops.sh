@@ -20,11 +20,11 @@ if [ $user_id -ne 0 ]; then
 fi
 for package in $@
 do
-    dnf list installed $package &>> $logs_file
-    if [ $? -ne 0 ]; then
+    dnf list installed $package &>> $logs_file  # check if already installed (if already tnstalled then it will show in dn finstalled package. next $? is 0)
+    if [ $? -ne 0 ]; then # so.... if already installed $? is 0 if not $? is 1 . so skip when already insatlled and install only if it is not present 
     {
         echo "going to install : $package"
-        dnf install $package -y &>> $logs_file
+        dnf install $package -y &>> $logs_file #pusing logs to logs_file
         validation $? "installing $package..."
     }
     else

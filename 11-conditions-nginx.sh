@@ -21,9 +21,9 @@ echo "still proceeding"
 
 
 dnf install mysql -y
-if [ $? -ne 0 ]; then
+if [ $? -ne 0 ]; then #$? denotes the exit status of previous command so if it is 0 SUCCESS and if it is 1 FAILED
     echo "mysql client installation failed"
-    exit 1
+    exit 1 #exit from loop do not continue when an error occurs
 else 
     echo "mysql client installation success"
 fi

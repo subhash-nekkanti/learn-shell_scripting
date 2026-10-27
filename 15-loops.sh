@@ -18,9 +18,9 @@ if [ $user_id -ne 0 ]; then
     echo "please run this script with sudo access"
     exit 1
 fi
-for package in $@
+for package in $@ #takes all arguments given in script($@) and stores in $package 
 do
-    echo "going to install : $package"
+    echo "going to install : $package" 
     dnf install $package -y &>> $logs_file
     validation $? "installing $package..."
 done
