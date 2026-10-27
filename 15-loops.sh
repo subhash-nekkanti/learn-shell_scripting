@@ -20,15 +20,7 @@ if [ $user_id -ne 0 ]; then
 fi
 for package in $@
 do
-    dnf list install $package
-    if [ $? -ne 0 ]; then
-    {
-        echo "going to install : $package"
-        dnf install $package -y &>> $logs_file
-        validation $? "installing $package..."
-    }
-    else
-        echo "already installed $package , SKIPPING installation $package"
-    fi
-    
+    echo "going to install : $package"
+    dnf install $package -y &>> $logs_file
+    validation $? "installing $package..."
 done
