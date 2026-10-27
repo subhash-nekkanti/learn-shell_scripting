@@ -19,7 +19,7 @@ if [ $user_id -ne 0 ]; then
     echo "please run this script with sudo access"
     exit 1
 fi
-for package b=in $@
+for package in $@
 do 
     echo "going to install : $package"
 done
