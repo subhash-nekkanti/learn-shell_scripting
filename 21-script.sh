@@ -1,3 +1,5 @@
 #!/bin/bash
-sh 20-script1.sh
 echo "$var"
+
+echo "I am in $present_country"
+echo "PID of $0 : $$" #$0 script name $$ PID of script
