@@ -32,7 +32,7 @@ fi
 echo "Scanning files older than $days in $source_dir"
 files_to_delete=$(find $source_dir -name "*.log" -type f -mtime +$days)
 
-if [ -z $files_to_delete ]; then
+if [ -z "$files_to_delete" ]; then
     echo "No log files found older than +$days"
     exit 0
 fi
@@ -40,5 +40,18 @@ fi
 while IFS= read -r line
 do
     echo "files to be deleted : $line"
+    rm -f $line
+    echo "file deleted : $line"
 
 done <<< "$files_to_delete"   #< --> for filr inputs.   <<< --> cariables as in inputs
+
+
+
+: '
+32.200.78.39 | 172.31.31.4 | t3.micro | https://github.com/subhash-nekkanti/learn-shell_scripting.git
+[ ec2-user@ip-172-31-31-4 ~/learn-shell_scripting ]$ sh 23-cleanup.sh /var/log/roboshop
+ERROR:: /var/log/roboshop doesnot exist
+Scanning files older than 14 in /var/log/roboshop
+23-cleanup.sh: line 35: [: /var/log/roboshop/cart.log: binary operator expected
+files to be deleted : /var/log/roboshop/cart.log
+files to be deleted : /var/log/roboshop/shipping.log'
