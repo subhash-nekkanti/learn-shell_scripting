@@ -16,12 +16,12 @@ N="\e[0m"
 source_dir=$1
 days=${2:-14}  #if user is not passing days, we will take 14 days as default
 usage(){
-    echo "${R}USAGE:: $0 [SOURCE_DIR] [days(optional,default to 14 days)]${N}"
+    echo -e "${R}USAGE:: $0 [SOURCE_DIR] [days(optional,default to 14 days)]${N}"
     exit 1
 
 }
 if [ -z "$source_dir" ]; then   #check if $source_dir empty or not -z
-    echo -e  "ERROR:: MISSING PRAMETERS"
+    echo  "ERROR:: MISSING PRAMETERS"
     usage
 fi
 
