@@ -14,7 +14,7 @@ G="\e[32m" #instead of repeating this command every where we are storing it in a
 Y="\e[33m"
 N="\e[0m"
 source_dir=$1
-days=$(2:-14)  #if user is not passing days, we will take 14 days as default
+days=${2:-14}  #if user is not passing days, we will take 14 days as default
 usage(){
     echo "${R}USAGE:: $0 [SOURCE_DIR] [days(optional,default to 14 days)]${N}"
     exit 1
