@@ -25,6 +25,6 @@ if [ -z "$source_dir" ]; then   #check if $source_dir empty or not -z
     usage
 fi
 
-if [ -d "$source_dir"]; then
+if [ -d "$source_dir" ]; then
     echo -e "${R}ERROR:: $source_dir doesnot exist${N}"
 fi
