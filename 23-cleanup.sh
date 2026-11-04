@@ -43,7 +43,7 @@ do
     rm -f $line
     echo "file deleted : $line"
 
-done <<< "$files_to_delete"   #< --> for filr inputs.   <<< --> cariables as in inputs
+done <<< "$files_to_delete"   #< --> for file inputs.   <<< --> variables as in inputs
 
 
 
