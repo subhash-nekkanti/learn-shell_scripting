@@ -54,4 +54,13 @@ ERROR:: /var/log/roboshop doesnot exist
 Scanning files older than 14 in /var/log/roboshop
 23-cleanup.sh: line 35: [: /var/log/roboshop/cart.log: binary operator expected
 files to be deleted : /var/log/roboshop/cart.log
-files to be deleted : /var/log/roboshop/shipping.log'
+files to be deleted : /var/log/roboshop/shipping.log
+
+crontab -e 
+insert
+5 starts helloworld every minute it prints
+crontab -e
+insert mode
+sh (always give full path in crontab )/home/ec2-user/learn-shell/23-cleanup.sh /var/log/roboshop  --->deletes logs every minute 
+sudo tail -f /var/log/cron --->to check logs
+'
